@@ -13,6 +13,8 @@
 		
 		<link rel="stylesheet" href="styles-contact.css">
 		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="scripts.js"></script>
 	</head>
 	<body>
 
@@ -22,6 +24,11 @@
 			camera-controls
 			ar
 			ar-modes="scene-viewer webxr quick-look"
+			camera-target="0m 10cm 0m"
+			camera-orbit="129deg 77deg 0.36m"
 		></model-viewer>
+
+		<p>Get current orbit position in degrees, degrees, meters</p>
+		<p><button id="et-get-orbit">Get Orbit</button>&nbsp;<span id="et-orbit-values"></span></p>
 	</body>
 </html>
